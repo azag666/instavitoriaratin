@@ -58,7 +58,7 @@
       name: "Vitória Lima 💖✨",
       avatar: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%81%F0%9F%8F%BF_%E2%99%80%EF%B8%8F%F0%9F%92%85%F0%9F%8F%BF.jpg",
       stats: {
-        posts: "6",
+        posts: "8",
         followers: "42.5K",
         following: "105"
       },
@@ -75,7 +75,7 @@
         display: "meuonlyvitorialima.netlify.app"
       },
       story: {
-        type: "video", // Agora suporta vídeo para o Story
+        type: "video", 
         media: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%96%20(1).mp4",
         linkText: "Acessar Conteúdo VIP 🔞",
         linkUrl: "https://meuonlyvitorialima.netlify.app/"
@@ -83,21 +83,20 @@
       music: "Vem Me Satisfazer - Sua Música",
       posts: [
         { 
-          id: 1, type: 'video', likes: '5.234', caption: 'Um gostinho do que tem lá no VIP... 🔥', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%96.mp4',
+          id: 1, type: 'video', likes: '5.234', caption: 'Um gostinho do que tem lá no VIP... 🔥🤫', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%A4%AB.mp4',
           comments: [
             { user: "carlos_edu", avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150", text: "Assinei o VIP ontem e tô impressionado. Vale cada centavo! 🔥" },
             { user: "rafael.costa", avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150", text: "Que mulher! O VIP tá pegando fogo 🔥🔥" }
           ]
         },
         { 
-          id: 2, type: 'photo', likes: '4.890', multiple: false, caption: 'Renovando as energias ☀️🌊', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%E2%98%80%EF%B8%8F%F0%9F%8C%8A%F0%9F%90%B3.jpg',
+          id: 2, type: 'video', likes: '4.890', caption: 'Deixando a imaginação rolar... ✨', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%99%86%F0%9F%8F%BE_%E2%99%80%EF%B8%8F%23explorepage%E2%9C%A8%20%23fyppp.mp4',
           comments: [
-            { user: "marcos.silva99", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150", text: "Perfeita demais 🤤" },
-            { user: "joao_pedro", avatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150", text: "Melhor criadora disparada. 😈" }
+            { user: "marcos.silva99", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150", text: "Perfeita demais 🤤" }
           ]
         },
         { 
-          id: 3, type: 'photo', likes: '6.421', multiple: false, caption: 'Let me be your favorite secret… ✨', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/Let%20me%20be%20your%20favorite%20secret%E2%80%A6%E2%9C%A8%F0%9F%AB%A2.jpg',
+          id: 3, type: 'video', likes: '6.421', caption: 'Vem me ver de pertinho ❤️‍🔥', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%A4%AD%23fyp%20%23viralreels.mp4',
           comments: [
             { user: "thiago_rs", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150", text: "Muito top! As fotos novas lá no grupo tão demais 😍" }
           ]
@@ -113,6 +112,12 @@
         },
         { 
           id: 6, type: 'photo', likes: '3.200', multiple: false, caption: 'Um segredinho nosso... 🤫', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/Let%20me%20be%20your%20favorite%20secret%E2%80%A6%E2%9C%A8%F0%9F%AB%A2.jpg' 
+        },
+        { 
+          id: 7, type: 'photo', likes: '4.890', multiple: false, caption: 'Renovando as energias ☀️🌊', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%E2%98%80%EF%B8%8F%F0%9F%8C%8A%F0%9F%90%B3.jpg'
+        },
+        { 
+          id: 8, type: 'video', likes: '5.234', caption: '🔥', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%96.mp4'
         }
       ]
     };
@@ -160,6 +165,7 @@
                   controls 
                   autoPlay 
                   playsInline
+                  muted // Garantia de funcionamento no celular
                 />
               ) : (
                 <img 
@@ -229,6 +235,7 @@
                 autoPlay 
                 playsInline 
                 loop
+                muted // Adicionado para garantir autoplay no iOS e Android
               />
             ) : (
               <img src={PROFILE_DATA.story.media} className="w-full h-full object-cover" alt="Story content" />
