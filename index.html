@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📸 Perfil Vitória ✨</title>
+  <title>📸 Perfil Vitória Lima ✨</title>
   
-  <!-- Importa o Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Importa o Babel para o navegador entender o código React/JSX -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Import Map para garantir a mesma versão do React para todas as bibliotecas -->
   <script type="importmap">
     {
       "imports": {
@@ -31,10 +28,8 @@
   </script>
 </head>
 <body class="bg-black">
-  <!-- Onde o nosso Mini App vai ser renderizado -->
   <div id="root"></div>
 
-  <!-- O teu código React adaptado para rodar direto no navegador -->
   <script type="text/babel" data-type="module">
     import React, { useState } from 'react';
     import { createRoot } from 'react-dom/client';
@@ -59,13 +54,13 @@
     // ✏️ ÁREA DE EDIÇÃO - ALTERE SEUS DADOS AQUI
     // ==========================================
     const PROFILE_DATA = {
-      username: "vitoriajacobot",
-      name: "Vitória 💖✨",
-      avatar: "https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/IMG_1029.jpg",
+      username: "vitorialima",
+      name: "Vitória Lima 💖✨",
+      avatar: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%81%F0%9F%8F%BF_%E2%99%80%EF%B8%8F%F0%9F%92%85%F0%9F%8F%BF.jpg",
       stats: {
-        posts: "36",
-        followers: "18.7K",
-        following: "123"
+        posts: "6",
+        followers: "42.5K",
+        following: "105"
       },
       bio: {
         mentions: "",
@@ -76,49 +71,49 @@
         ]
       },
       link: {
-        url: "https://meuonlycarol.netlify.app/",
-        display: "meuonlycarol.netlify.app"
+        url: "https://meuonlyvitorialima.netlify.app/",
+        display: "meuonlyvitorialima.netlify.app"
       },
       story: {
-        image: "https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/658922685_17943671829152626_8461647422046406575_n..webp",
-        linkText: "Meus videos Gravida 🔞",
-        linkUrl: "https://meuonlycarol.netlify.app/"
+        type: "video", // Agora suporta vídeo para o Story
+        media: "https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%96%20(1).mp4",
+        linkText: "Acessar Conteúdo VIP 🔞",
+        linkUrl: "https://meuonlyvitorialima.netlify.app/"
       },
-      music: "Bunda De Milhões - Sua Música",
+      music: "Vem Me Satisfazer - Sua Música",
       posts: [
         { 
-          id: 1, type: 'video', likes: '2.143', caption: 'Prévia do que rolou no VIP hoje... 🔥', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Juro%20que%20na%CC%83o%20entendo%20como%20descobriram%20%F0%9F%A4%94%F0%9F%98%9D%23bihgarcia%20%23reels%20%23foryou%20%23gravidez.mp4',
+          id: 1, type: 'video', likes: '5.234', caption: 'Um gostinho do que tem lá no VIP... 🔥', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%96.mp4',
           comments: [
             { user: "carlos_edu", avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150", text: "Assinei o VIP ontem e tô impressionado. Vale cada centavo! 🔥" },
             { user: "rafael.costa", avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150", text: "Que mulher! O VIP tá pegando fogo 🔥🔥" }
           ]
         },
         { 
-          id: 2, type: 'video', likes: '1.890', caption: 'Bom dia amores! Mais tarde tem surpresa no grupinho 🤫', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Joga%20o%20biqui%CC%81ni%20%F0%9F%A5%B5%F0%9F%8E%B6%23bihgarcia%20%23reels%20%23foryou%20%23viral%20%23gravidez.mp4',
+          id: 2, type: 'photo', likes: '4.890', multiple: false, caption: 'Renovando as energias ☀️🌊', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%E2%98%80%EF%B8%8F%F0%9F%8C%8A%F0%9F%90%B3.jpg',
           comments: [
-            { user: "marcos.silva99", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150", text: "Conteúdo exclusivo perfeito, melhor investimento da semana 🤤" },
-            { user: "joao_pedro", avatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150", text: "Melhor criadora disparada. Conteúdo sem enrolação! 😈" }
+            { user: "marcos.silva99", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150", text: "Perfeita demais 🤤" },
+            { user: "joao_pedro", avatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150", text: "Melhor criadora disparada. 😈" }
           ]
         },
         { 
-          id: 3, type: 'photo', likes: '3.421', multiple: false, caption: 'Arrasta pro lado pra ver um pedacinho do ensaio novo 📸', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/IMG_1029.jpg',
+          id: 3, type: 'photo', likes: '6.421', multiple: false, caption: 'Let me be your favorite secret… ✨', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/Let%20me%20be%20your%20favorite%20secret%E2%80%A6%E2%9C%A8%F0%9F%AB%A2.jpg',
           comments: [
-            { user: "thiago_rs", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150", text: "Muito top! As fotos novas lá no grupo tão demais 😍" },
-            { user: "lucas_almeida", avatar: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150", text: "Comprei o pack e não me arrependo, qualidade absurda! 👏" }
+            { user: "thiago_rs", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150", text: "Muito top! As fotos novas lá no grupo tão demais 😍" }
           ]
         },
         { 
-          id: 4, type: 'video', likes: '1.500', caption: 'Vem me ver de pertinho ✨ link na bio', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Em%20cima%20do%20jetski%20%F0%9F%A5%B5%F0%9F%8E%B6%23jetski%20%23pedrosampaio%20%23melody%20%23reels%20%23bihgarcia.mp4',
+          id: 4, type: 'photo', likes: '3.500', multiple: false, caption: 'Bem brasileira 🇧🇷✨', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%40bartiraluzoficial%20%F0%9F%87%A7%F0%9F%87%B7%E2%9C%A8.jpg',
           comments: [
             { user: "andre_luiz", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150", text: "Já renovei minha assinatura, não fico sem de jeito nenhum 🥵" }
           ]
         },
-        { id: 5, type: 'video', likes: '2.000', caption: 'Livre, leve e solta 💖', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Boom%20dia%20%E2%98%80%EF%B8%8F%F0%9F%92%96%23bihgarcia%20%23reels%20%23foryou%20%23viral%20%23dance.mp4' },
-        { id: 6, type: 'video', likes: '1.200', caption: 'Barulho do mar 🌊', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Barulho%20do%20mar%20%F0%9F%8C%8A%F0%9F%8E%B6%23bihgarcia%20%23foryou%20%23viral%20%23gravidez%20(1).mp4' },
-        { id: 7, type: 'video', likes: '5.200', caption: 'Vocês sentem falta desse tipo de vídeo 👀 Querem que eu volte a postar mais assim ❤️‍🔥', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Voce%CC%82s%20sentem%20falta%20desse%20tipo%20de%20vi%CC%81deo%20%F0%9F%91%80%20Querem%20que%20eu%20volte%20a%20postar%20mais%20assim%20%E2%9D%A4%EF%B8%8F_%F0%9F%94%A5%23bihgarci.mp4' },
-        { id: 8, type: 'video', likes: '3.800', caption: 'Tá de brincadeira 😛', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Ta%CC%81%20de%20brincadeira%20%F0%9F%98%9D%23bihgarcia%20%23reels%20%23viral%20%23foryou%20%23fy%20%23memes.mp4' },
-        { id: 9, type: 'video', likes: '4.900', caption: 'De quatro 😛💃🏼', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/De%20quatro%20%F0%9F%98%9D%F0%9F%92%83%F0%9F%8F%BC%23bihgarcia%20%23ruivinhabih%20%23trend%20%23reels%20%23viral%20%23foryou%20%23fy.mp4' },
-        { id: 10, type: 'video', likes: '1.500', isTagged: true, caption: 'Fala pra nós o que faltou nesse vídeo 🫣', url: 'https://pub-165b12f7792f481faed1f61d81578b79.r2.dev/gravida/Fala%20pra%20no%CC%81s%20o%20que%20faltou%20nesse%20vi%CC%81deo%F0%9F%AB%A3%F0%9F%AB%B6%F0%9F%8F%BB%20%23privacy%20%23explorar%20%23mulheres%20%23gostosas%20%23swingswing%20%23.mp4' }
+        { 
+          id: 5, type: 'photo', likes: '4.100', multiple: false, caption: 'Dando um trato visual 💁🏽‍♀️💅🏽', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/%F0%9F%92%81%F0%9F%8F%BF_%E2%99%80%EF%B8%8F%F0%9F%92%85%F0%9F%8F%BF.jpg' 
+        },
+        { 
+          id: 6, type: 'photo', likes: '3.200', multiple: false, caption: 'Um segredinho nosso... 🤫', url: 'https://pub-28caac552342447180cf13cbc92a202d.r2.dev/Let%20me%20be%20your%20favorite%20secret%E2%80%A6%E2%9C%A8%F0%9F%AB%A2.jpg' 
+        }
       ]
     };
 
@@ -227,7 +222,17 @@
               <X size={28} className="text-white cursor-pointer drop-shadow-md" onClick={() => setIsStoryOpen(false)} />
             </div>
 
-            <img src={PROFILE_DATA.story.image} className="w-full h-full object-cover" alt="Story content" />
+            {PROFILE_DATA.story.type === 'video' ? (
+              <video 
+                src={PROFILE_DATA.story.media} 
+                className="w-full h-full object-cover" 
+                autoPlay 
+                playsInline 
+                loop
+              />
+            ) : (
+              <img src={PROFILE_DATA.story.media} className="w-full h-full object-cover" alt="Story content" />
+            )}
 
             <a
               href={PROFILE_DATA.story.linkUrl}
